@@ -1,0 +1,250 @@
+* {
+    margin:0; 
+    padding: 0; 
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.main {
+    flex: 1;
+
+
+
+}
+body {
+    background: linear-gradient(
+       90deg, 
+        rgb(255, 255, 255) 30%,
+        rgba(255, 255, 255, 0.8) 70%
+        
+    );
+    font-family: Arial, Helvetica, sans-serif;
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    }
+
+    .back{padding: 50px 0;
+    background-color: rgb(0, 159, 199);
+    }
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+     align-items: center;
+     justify-content: space-between;
+     z-index: 1000;
+}
+.logo{
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    font-weight: 800 ;
+    text-transform: uppercase;
+    height: 90px;;
+    
+}
+
+    .menu .navbar ul li {position: relative;
+        float: left;
+
+    }
+    .menu .navbar ul li a{
+      font-size: 18px;
+      padding: 20px;  
+      color: white;
+      display: block;
+    } 
+    .menu .navbar ul li a:hover{
+      
+    color:#ff8800;
+    } 
+
+    #menu{ display: none;}
+
+    .menu-icono{
+        width:25px;
+    }
+    .menu label{
+        cursor: pointer;
+        display: none;
+    }
+    @media (max-width: 768px){
+        .menu label{
+            display: block;
+        }
+        .menu .navbar{
+            position: absolute;
+            top: 105px;
+            left: 0;
+            width: 100%;
+            background: rgb(0, 159, 199);
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height 0.3s ease-out;
+        }
+        .menu .navbar ul{
+            flex-direction: column;
+        }
+        .menu .navbar ul li{
+            width: 100%;
+            text-align: center;
+        }
+        .menu #menu:checked ~ .navbar{
+            max-height: 300px;
+        }
+
+
+
+
+}
+
+ 
+}
+
+
+
+
+.titulo {
+    background-image: url(guaralact.jpg);
+    padding: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    background-size: cover;
+    font-size: 2vw;
+    color: white;
+      -webkit-text-stroke: 2.5px rgb(0, 159, 199);
+      border-bottom: 4px solid #ff8800;
+}
+
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 55px;
+    }
+
+.Producto {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow: 0 0  10px rgba(0, 0, 0, 0.808);
+    transition: transform 0.3s ease;
+
+;
+}
+
+.Producto img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.nombrep{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 159, 199, 0.527);
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 136, 0);
+    text-align: left;
+    padding: 10px ;
+    font-size: 18px;
+    font-weight:bold ;
+    transition: transform 0.25s ease;
+    transform-origin: bottom;
+
+
+
+}
+
+.Producto:hover .nombrep {
+  transform: translateY(-15px);
+}
+
+.Producto:hover {
+  transform: scale(1.05);
+}
+
+/* Pie de pagina */
+
+.pie{
+    display: flex;
+    gap: 500px;
+    align-items: center;
+    margin-left: 1em;
+    margin-right: 1em;
+    justify-content: center;
+}
+
+        :root {
+
+        --primary-color: #00c3ff;
+        --secondary-color: #ff8800;
+        --text-color: #333;
+        --white: #fff;
+        --shadow: 0 2px 10px rgba(0,0,0,0.1);
+        --border-radius: 10px;
+        --transition: all 0.3s ease;
+
+    }
+
+    .email-contact {
+
+        margin-bottom: 2em;
+
+    }
+
+
+    .email-contact a {
+
+        color: var(--secondary-color);
+
+        text-decoration: none;
+
+        font-weight: bold;
+
+        font-size: 1.2em;
+
+        transition: var(--transition);
+
+        display: inline-block;
+
+        padding: 8px 15px;
+
+        border-radius: 5px;
+
+        background: rgba(255, 255, 255, 0.2);
+
+    }
+
+
+    .email-contact a:hover {
+
+        background: var(--secondary-color);
+
+        color: var(--white);
+
+        transform: translateY(-3px);
+
+    }
+
+    
