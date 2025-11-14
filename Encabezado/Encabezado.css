@@ -113,6 +113,94 @@ body {
  
 }
 
+/*reseña historica*/
+
+.reseña{
+    background: linear-gradient( rgba(41, 41, 41, 0.425)), url('../vaca.jpg');
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+    padding: 28px;
+    position: relative;
+    z-index: -1;
+    border-bottom: solid 5px #ff8800;
+
+}
+
+.reseña div{
+
+
+}
+
+*{
+  margin: 0;
+  padding: 0;  
+}
+html{
+  font-family: Poppins;
+  color: #f0f0f0;
+}
+body{
+
+  min-height: 100vh;
+  color: #ffffff;
+  align-content: center;
+    text-shadow: 1px 1px 1px #333;
+}
+h1, h4{
+  color: white;
+  text-shadow: 1px 1px 1px #333;
+}
+.card{
+  margin-left: 2%;
+  padding: 3em;
+  width: 30%;
+  min-width: 350px;
+  background: #272c26;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+}
+
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.card::after, .card::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(from var(--angle), #e97100, #00fffb, #e97100);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 5px;
+  border-radius: 20px;
+  animation: 3s spin linear infinite;
+}
+.card::before{
+  filter: blur(1.5rem);
+  opacity: 10;
+}
+@keyframes spin{
+  from{
+    --angle: 0deg;
+  }
+  to{
+    --angle: 360deg;
+  }
+}
+
+
+
+
+
+
+
 
 
 /* Pie de pagina */

@@ -152,10 +152,9 @@ body {
 }
 
 .Producto img{
-    height: 300px;
-    width: 300px;
-    object-fit: cover;
-    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
 }
 
 .nombrep{
