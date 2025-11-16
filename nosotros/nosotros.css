@@ -4,7 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-
+    
 }
 
 
@@ -14,7 +14,10 @@
     flex: 1;
 }
 body {
-    background: rgba(98, 224, 255, 0.7);
+    background: linear-gradient( rgba(4, 36, 63, 0.726)), url(vaca.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
         
     font-family: Arial, Helvetica, sans-serif;
 
@@ -23,19 +26,27 @@ body {
     margin: 0 auto;
     }
 
-    .back{padding: 50px 0;
-    background-color: rgb(0, 159, 199);
+   .back{padding: 50px 0;
+    position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgb(0, 159, 199);
+
     }
 .menu{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
-
     display: flex;
      align-items: center;
      justify-content: space-between;
      z-index: 1000;
+     background-color: rgb(0, 159, 199); /* Asegura que tenga fondo */
+     
+
 }
 .logo{
     font-size: 40px;
@@ -72,7 +83,12 @@ body {
     }
     @media (max-width: 768px){
         .menu label{
-            display: block;
+                      position: absolute;
+  top: 40%;
+
+  right: 20px;
+  display: block;
+  z-index: 1001;
         }
         .menu .navbar{
             position: absolute;
@@ -103,15 +119,26 @@ body {
  
 }
 
+.puntos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .section {
+    width: 25%;
+    min-height: 500px ;
+    min-width: 400px;
     margin: 30px;
-    padding: 25px;
+    padding: 30px;
     background: rgba(255, 255, 255, 0);
     border-radius: 10px;
     backdrop-filter: none;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: none;
     background-color: rgba(0, 195, 255, 0.7);
+    justify-items: center;
+    
 }
 
 .section h2 {
@@ -140,16 +167,21 @@ body {
     text-align: justify;
     color: #fff;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
-}
+    margin-left: 30px;
+    margin-right: 30px;
+margin-top: 12%;}
+
 
 ul {
     list-style-type: none;
     padding-left: 0;
+
 }
 
 
+
 .ct {
-    margin-bottom: 15px;
+    margin-top: 10%;
     padding: 10px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
@@ -165,6 +197,7 @@ li strong {
 }
 
 .concepto{
+    margin-top: 100px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
