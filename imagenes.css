@@ -1,0 +1,41 @@
+
+
+
+
+.pdt{
+
+
+            margin: 0;
+            padding: 0;
+            background: #a81b1b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 100vw;
+
+
+}
+        .productos{
+            display: flex;
+            width: 90%;
+            width: 100%;
+            height: 600px;
+            overflow: hidden;
+            
+        }
+
+        .productos img {
+            width: 0px;
+            flex-grow: 1;
+            object-fit: cover;
+            opacity: 0.8;
+            transition: 0.5s ease;
+        }
+
+        .productos img:hover {
+            cursor: crosshair;
+            width: 300px;
+            opacity: 1;
+            filter: contrast(120%);
+        }

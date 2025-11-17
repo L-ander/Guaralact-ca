@@ -5,6 +5,8 @@
     text-decoration: none;
     list-style: none;
 
+
+
 }
 
 html, body {
@@ -13,6 +15,7 @@ html, body {
   padding: 0;
   display: flex;
   flex-direction: column;
+      color: skyblue;
 }
 
 
@@ -132,6 +135,15 @@ body {
 
 #carouselExampleControls {
   margin-top: 100px;
+
+}
+
+.carousel-control-next-icon {
+  display: none;
+}
+
+.carousel-control-prev-icon {
+  display: none;
 }
 
 
@@ -145,7 +157,7 @@ body {
     background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-    padding: 28px;
+    padding: 5%;
     position: relative;
     z-index: -1;
     border-bottom: solid 5px #ff8800;
@@ -220,6 +232,58 @@ h1, h4{
 }
 
 
+
+
+
+
+/*producros*/
+.cierre{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+  gap: 20%;
+  align-content: center;
+  font-size: 1.5em;
+  background: linear-gradient( rgba(41, 41, 41, 0.705)), url(../comida.jpg);
+  background-repeat: no-repeat;
+  background-position: 0;
+  background-size: cover;
+  border-bottom: solid 5px #ff8800;
+}
+
+
+
+/*contactos*/
+
+.scontact{
+  background: linear-gradient( rgba(41, 41, 41, 0.705)), url(../mapa.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 5%;
+}
+
+.scontact h1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 3vw;
+  color: white;
+
+}
+
+
+
+.titulo {
+    background-image: url(../PROD/guaralact.jpg);
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    background-size: cover;
+    color: white;
+    align-content: center;
+      -webkit-text-stroke: 2.5px rgb(0, 159, 199);
+      border-bottom: 4px solid #ff8800;
+}
 
 
 
