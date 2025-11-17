@@ -139,15 +139,40 @@ body {
 }
 
 .carousel-control-next-icon {
-  display: none;
+  display: block;      /* Asegura que el ícono se muestre */
+  width: 100%;         /* Escala dentro del botón */
+  height: 100px;
+
+
 }
 
 .carousel-control-prev-icon {
-  display: none;
+  display: block;      /* Asegura que el ícono se muestre */
+  width: 100%;         /* Escala dentro del botón */
+  height: 100px;
+
+
 }
 
+.carousel-control-next{
+width: 40px;         /* Reduce el ancho del área de clic */
+  height: 40px;        /* Reduce el alto del área de clic */
+  top: 180px;            /* Centrado vertical */
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.3); /* Opcional: fondo semitransparente */
+  border-radius: 50%;  /* Opcional: forma circular */
+  z-index: 1001;
+}
 
- 
+.carousel-control-prev{
+width: 40px;         /* Reduce el ancho del área de clic */
+  height: 40px;        /* Reduce el alto del área de clic */
+  top: 180px;            /* Centrado vertical */
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.3); /* Opcional: fondo semitransparente */
+  border-radius: 50%;  /* Opcional: forma circular */
+  z-index: 1001;
+}
 
 
 /*reseña historica*/
