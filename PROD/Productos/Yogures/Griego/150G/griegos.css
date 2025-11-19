@@ -1,0 +1,16 @@
+.carrusel{
+    margin: 100px auto;
+    border: solid 5px red;
+    display: flex;
+}
+
+.griego{
+    flex: 0 0 5em;
+    height: 5em;
+    border: solid 2px red;
+}
+
+
+.yogures{
+    display: flex;
+}

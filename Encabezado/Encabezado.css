@@ -298,7 +298,7 @@ h1, h4{
 
 
 .titulo {
-    background-image: url(../PROD/guaralact.jpg);
+    background:#00c3ff;
     padding: 20px;
     background-repeat: no-repeat;
     background-position: center;
@@ -306,12 +306,15 @@ h1, h4{
     background-size: cover;
     color: white;
     align-content: center;
-      -webkit-text-stroke: 2.5px rgb(0, 159, 199);
       border-bottom: 4px solid #ff8800;
 }
 
 
-
+.carousel-item img{
+  min-height: 220px;
+  height: 40vw;
+  object-fit: fill;
+}
 
 
 
