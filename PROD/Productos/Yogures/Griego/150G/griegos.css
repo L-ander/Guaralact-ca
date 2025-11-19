@@ -1,16 +1,43 @@
 .carrusel{
     margin: 100px auto;
-    border: solid 5px red;
+    border: solid 4px rgb(0, 183, 255);
     display: flex;
+    overflow-x: auto;
+    width: 90%;
+    border-radius: 8px;
+}
+
+.carrusel::-webkit-scrollbar{
+    display: none;
 }
 
 .griego{
-    flex: 0 0 5em;
-    height: 5em;
-    border: solid 2px red;
+    flex: 0 0 8em;
+    height: 9em;
+    border-radius: 8px;
+    width: 5em;
+    object-fit: contain;
+    text-align: center;
+    color: rgb(19, 180, 255);
+
+}
+
+.griego img{
+    width: 100%;
+    height: 80%;
 }
 
 
 .yogures{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    animation: spin 15s infinite linear;
+    padding-right: 1em;
+}
+
+@keyframes spin {
+    from {translate: 0;}
+    to {translate: -100%;}
 }
